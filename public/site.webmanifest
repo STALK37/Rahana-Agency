@@ -1,0 +1,13 @@
+{
+  "name": "Rahana",
+  "short_name": "Rahana",
+  "description": "Rahana — estate agency in Yerevan. Sale and rental of modern apartments.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0D0D0F",
+  "background_color": "#F7F4EF",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

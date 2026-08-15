@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement or a new capability
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation you ran into, not just the feature you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Search and filters
+        - Property detail
+        - Payment planner
+        - Favourites and compare
+        - Translations (hy / en / ru)
+        - Design system
+        - Build, tooling or deployment
+        - Something else
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: design
+    attributes:
+      label: Design discipline
+      description: This project keeps a deliberately narrow visual system — see CONTRIBUTING.md.
+      options:
+        - label: This works within the existing palette (gold is the only accent) and motion rules
+          required: false

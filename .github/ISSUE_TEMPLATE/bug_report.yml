@@ -1,0 +1,59 @@
+name: Bug report
+description: Something is broken or renders incorrectly
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. A screenshot and the full URL usually make this a five-minute fix.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Include the search params — they carry the whole filter state.
+      placeholder: /listings?deal=sale&districts=center&rooms=3
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to /listings
+        2. Select Arabkir
+        3. Drag the price slider to the far left
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Interface language
+      options: ["Armenian (hy)", "English (en)", "Russian (ru)", "Not language-specific"]
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 139 on macOS 15
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or console output
+      description: Drag an image in here, or paste any console errors.
+    validations:
+      required: false
