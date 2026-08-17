@@ -1,0 +1,10 @@
+# Every pull request is routed to the repository owner for review.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+*                   @STALK37
+
+# The design system and the routing layer are the two places where a careless
+# change does the most damage, so they are called out explicitly.
+/src/styles.css     @STALK37
+/src/routes/        @STALK37
+/.github/           @STALK37
