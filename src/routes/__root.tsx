@@ -77,7 +77,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 /** Canonical origin used for structured data and share cards. Override with VITE_SITE_URL. */
-export const SITE_URL = import.meta.env["VITE_SITE_URL"] ?? "https://rahana.am";
+export const SITE_URL = import.meta.env["VITE_SITE_URL"] ?? "https://rahana.online";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
